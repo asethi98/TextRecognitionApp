@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/scanAndTranslateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@color/darkBlue">
+
+        <ImageView
+            android:id="@+id/cameraImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_camera_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cameraImage"
+            android:layout_centerInParent="true"
+            android:text="Scan and Translate"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/raleway_extrabold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scanToPDFLayout"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/scanAndTranslateLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/pdfImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_pdf_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pdfImage"
+            android:layout_centerInParent="true"
+            android:text="Scan to PDF"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/raleway_extrabold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selectFromAlbumLayout"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/scanToPDFLayout"
+        android:background="@color/middleBlue">
+
+        <ImageView
+            android:id="@+id/albumImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_album_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/albumImage"
+            android:layout_centerInParent="true"
+            android:text="Choose From Library"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/raleway_extrabold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/translationsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/selectFromAlbumLayout"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/worldImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_world_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/worldImage"
+            android:layout_centerInParent="true"
+            android:text="View Saved Translations"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/raleway_extrabold" />
+    </RelativeLayout>
+</RelativeLayout>

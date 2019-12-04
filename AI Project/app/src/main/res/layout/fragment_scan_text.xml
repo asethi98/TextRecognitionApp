@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/detectedTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Detected Text:"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/raleway_bold" />
+
+    <ScrollView
+        android:id="@+id/detectedTextScrollView"
+        android:layout_width="329dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/detectedTextTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/detectedTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/detectedTextContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Text:"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/open_sans" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detectedTextScrollView"
+        android:layout_below="@+id/detectedTextTitle"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/voiceDetectedTextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/detectedTextScrollView"
+            android:layout_gravity="right|end|top"
+            android:src="@drawable/ic_volume_up_black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exportToPDFBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detectedTextScrollView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_background_button"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Export to PDF"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Text Recognition</string>
+    <string name="txt_message">sample text</string>
+    <string name="navigation_drawer_open">Open Nav Drawer</string>
+    <string name="navigation_drawer_close">Close Nav Drawer</string>
+    <string name="noInternet">There is no internet connection. The text cannot be translated.</string>
+</resources>
